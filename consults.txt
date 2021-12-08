@@ -1,0 +1,3 @@
+consult(node_id), consult(nodeX), consult(nodeY), consult(increasing_number_line_id), consult(line_one_way), consult(is_road), consult(no_light), consult(has_toll), consult(incline), consult(speed_limit), consult(traffic), consult(client), consult(taxi), consult(rules).
+
+consult(node_id), consult(nodeX), consult(nodeY), consult(increasing_number_line_id), consult(line_one_way), consult(is_road), consult(no_light), consult(has_toll), consult(incline), consult(speed_limit), consult(traffic), consult(client_custom), consult(taxi_custom), consult(rules).

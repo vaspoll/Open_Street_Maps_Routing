@@ -1,0 +1,12 @@
+X,Y,id,available,capacity,languages,rating,long_distance,type	description
+23.735562,37.975048,100,yes,1-2,greek,8.2,yes,subcompact	(Σύνταγμα)
+23.727352,37.974937,110,yes,1-4,english,8,6,yes,large	(Μοναστηράκι)
+23.703761,37.962987,120,yes,1-4,greek,9.2,yes,compact	(Ταύρος)
+23.652384,37.974462,130,no,1-4,greek|english,8.3,yes,subcompact	(Νίκαια)
+23.699844,37.957186,140,yes,1-4,greek|english,7.1,no,large	(Καλλιθέα)
+23.726923,37.948974,150,yes,1-4,greek,7.3,no,subcompact	(Δάφνη)
+23.772421,37.977163,160,yes,1-4,greek|english,6.1,yes,large	(Ζωγράφος)
+23.693226,38.011654,170,no,1-2,greek|english,8.2,yes,large	(Περιστέρι)
+23.726252,37.966176,180,yes,1-4,english,6.0,no,subcompact	(Κουκάκι)
+23.681297,37.953631,190,yes,1-4,greek|english,7.4,no,large	(Μοσχάτο)
+23.682080,37.991415,200,yes,1-4,greek,5.2,no,compact	(Αιγάλαιω)
