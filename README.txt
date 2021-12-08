@@ -1,6 +1,9 @@
-Για την εκτέλεση των προγραμμάτων μας πρέπει να ακολουθηθούν τα ακόλουθα βήματα:
+Execution instructions
 
-1) Εκτέλεση σε τερματικό των εντολών προεπεξεργασίας δεδομένων (csv) μέσω Java για παραγωγή γνώσης Prolog
+1) Download from open street maps the osm file corresponding to the area of interest.
+   Execute python script osm_to_csv.py to parse the osm file into csv format
+
+2) 
 - javac preprocessing1.java
 -java preprocessing1
 - javac preprocessing2.java
@@ -10,8 +13,7 @@
 - javac preprocessing4.java
 -java preprocessing4
 
-2) Τον εμπλουτισμό της Βάσης Γνώσης prolog με την εκτέλεση των παρακάτω δύο συνεδριών Prolog:
-α) 1η συνεδρία:
+3) Run in Prolog the following:
 consult(node_id).
 consult(nodeX).
 consult(nodeY).
@@ -28,7 +30,6 @@ consult(taxi).
 consult(rules).
 open('next.pl', write, ID),(is_next(INC_NUM1, INC_NUM2, J2, 20.0, DT, DIST), write(ID, next(INC_NUM1, INC_NUM2, J2, DT, DIST)), write(ID, '.'), nl(ID), fail; close(ID)).
 open('adequate.pl', write, ID), (taxi_adequacy(TAXI_ID, INC_NUM), write(ID, adequate(TAXI_ID, INC_NUM)), write(ID, '.'), nl(ID), fail; close(ID)).
-β) 2η συνεδρία:
 consult(node_id).
 consult(nodeX).
 consult(nodeY).
@@ -46,9 +47,8 @@ consult(rules).
 open('next_custom.pl', write, ID),(is_next(INC_NUM1, INC_NUM2, J2, 20.0, DT, DIST), write(ID, next(INC_NUM1, INC_NUM2, J2, DT, DIST)), write(ID, '.'), nl(ID), fail; close(ID)).
 open('adequate_custom.pl', write, ID), (taxi_adequacy(TAXI_ID, INC_NUM), write(ID, adequate(TAXI_ID, INC_NUM)), write(ID, '.'), nl(ID), fail; close(ID)).
 
-3) Εκτέλεση σε τερματικό του βασικού προγράμματος Java:
-javac A_star.java
-java A_star
+4) Run the main function that gives the optimal distances between client points and starting points
+javac dijkstra.java
+java dijkstra
 
-Εισάγετε το k (π.χ. 5) με τη σημασιολογία που περιγράφεται στην εκφώνηση.
-Τα αποτελέσματα εμφανίζονται στο τερματικό και εξάγονται σε 4 αρχεία .kml όπως περιγράφουμε στην αναφορά.
+5) The above distances form a complete graph. Copy the edge weights into ortools.py and execute it to solve the routing problem and obtain the optimal route
